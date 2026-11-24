@@ -142,19 +142,21 @@
       "period": "2010–2013",
       "evidenceStatus": "documented",
       "publicationStatus": "approved",
-      "id": "uudenmaan-autovarustelu"
+      "id": "uudenmaan-autovarustelu",
+      "summary": "Worked in an automotive technical role."
     },
     {
       "employer": "Decatec",
       "role": "Entrepreneurship and subcontracting",
       "evidenceStatus": "documented",
       "publicationStatus": "approved",
-      "id": "decatec"
+      "id": "decatec",
+      "summary": "Worked as an automotive entrepreneur and subcontractor, providing technical services."
     },
     {
       "employer": "Earlier experience",
       "role": "Technical work and motorsport",
-      "summary": "Automotive mechanic and vehicle electrical systems work, accessory installation, product testing, installation instructions, technical support, automotive technical training, service offering development and motorsport technical operations and team leadership.",
+      "summary": "Worked as an automotive mechanic with vehicle electrical systems and technical accessories. Earlier work included accessory development, product testing, installation documentation, technical support and training, service development and technical team leadership in motorsport.",
       "evidenceStatus": "documented",
       "publicationStatus": "approved",
       "id": "earlier-experience"
@@ -167,16 +169,17 @@
       "challenge": "Improve operational performance, customer experience, team stability and profitability.",
       "contribution": "As Aftersales Manager, I led Jaguar and Land Rover aftersales improvements and supported the Mazda and XPENG service launches.",
       "actions": [
-        "Rebuilt team structures and clarified responsibilities.",
-        "Improved customer communication, workflow management, workshop planning and capacity management.",
-        "Improved documentation and billing processes.",
-        "Supported the launch of Mazda and XPENG service operations and development of additional locations."
+        "Rebuilt team structures and clarified operational responsibilities.",
+        "Improved customer communication, workshop planning and capacity management.",
+        "Improved operational documentation and billing processes.",
+        "Supported the launch of Mazda and XPENG service operations and prepared two additional service locations.",
+        "Improved courtesy car billing."
       ],
-      "results": "Customer Net Promoter Score improved by 26 points. Mazda and XPENG service operations launched.",
+      "results": "Employee engagement strengthened and courtesy car billing improved. Mazda and XPENG service operations launched, and two additional service locations were prepared.",
       "metric": {
         "value": "+26",
         "label": "Customer NPS points",
-        "context": "Aftersales turnaround at Inchcape Motors Finland"
+        "context": "Inchcape Motors Finland · Owner-reported"
       },
       "evidenceStatus": "owner-supplied",
       "publicationStatus": "approved",
@@ -186,7 +189,24 @@
       "lessonsLearned": "A reliable operational foundation gives teams a basis for more advanced improvements.",
       "transferableCompetencies": "Operational transformation, team development, process improvement, commercial performance and operational reliability.",
       "status": "completed",
-      "careerId": "inchcape"
+      "careerId": "inchcape",
+      "additionalMetrics": [
+        {
+          "value": "+65%",
+          "label": "Service labour sales",
+          "context": "Inchcape Motors Finland · Owner-reported"
+        },
+        {
+          "value": "+70%",
+          "label": "Spare parts sales",
+          "context": "Inchcape Motors Finland · Owner-reported"
+        },
+        {
+          "value": "+60%",
+          "label": "Revenue per labour hour",
+          "context": "Inchcape Motors Finland · Owner-reported"
+        }
+      ]
     },
     {
       "slug": "schmiedmann-service",
@@ -194,9 +214,10 @@
       "challenge": "Establish and develop service operations at the larger facility.",
       "contribution": "As Service Manager, I developed the operating model for the larger workshop and led the development of BMW and MINI service operations.",
       "actions": [
-        "Recruited and developed employees and supported customer acquisition and service product development.",
-        "Improved documentation and communication, including SAP-based workflows.",
-        "Adapted operations to changing market conditions during the pandemic."
+        "Recruited and developed employees to support growth.",
+        "Developed customer acquisition and service offerings.",
+        "Improved communication and documentation through SAP-based workflows.",
+        "Adapted operations during the COVID-19 pandemic."
       ],
       "results": "Service capacity doubled while maintaining profitability.",
       "metric": {
@@ -217,14 +238,14 @@
     {
       "slug": "laakkonen-workshop",
       "project": "Integrating operations following organisational change",
-      "challenge": "Develop a coherent operating model following the integration of previously separate automotive businesses.",
+      "challenge": "Integrate previously fragmented workshop practices following a business acquisition.",
       "contribution": "As Workshop Manager, I clarified responsibilities and led operational and personnel changes during the integration.",
       "actions": [
-        "Clarified roles, responsibilities and ownership.",
-        "Developed cooperation across teams and established clearer workflows.",
-        "Managed operational and personnel changes."
+        "Integrated operating practices and clarified responsibilities, roles and workflows.",
+        "Developed cooperation across teams.",
+        "Managed organisational and personnel changes following the acquisition."
       ],
-      "results": "The reported outcomes were clearer operations, improved financial performance and improved customer satisfaction.",
+      "results": "Workshop financial performance, customer satisfaction and NPS improved. Responsibilities and workflows became clearer.",
       "metric": {
         "value": "27",
         "label": "Employees managed",
@@ -249,14 +270,15 @@
       "analysis": "Identify needs with Bosch and the service network. Schedule training around Finnish working and holiday rhythms.",
       "contribution": "As Automotive Technical Trainer, I designed the annual calendar, adapted training materials and delivered technical and diagnostic equipment training.",
       "actions": [
-        "Designed the annual calendar and adapted international materials to local requirements.",
-        "Developed practical exercises, delivered and marketed training, and provided customer-specific diagnostic equipment training."
+        "Built and launched a technical training programme and redesigned the annual calendar around local working patterns.",
+        "Adapted international training materials to market requirements.",
+        "Developed and marketed customer-specific diagnostic training."
       ],
-      "results": "Technical training operations resumed. The redesigned approach received positive feedback.",
+      "results": "Training courses sold out rapidly. Sales targets were achieved within the first few months, and training operations became profitable shortly after relaunch.",
       "lessonsLearned": "Training design includes when participants can attend and how they can apply the learning in their work.",
       "transferableCompetencies": "Establishing new operations, technical communication, competence development, customer understanding and commercialisation.",
       "status": "completed",
-      "evidenceStatus": "qualitative",
+      "evidenceStatus": "owner-supplied",
       "publicationStatus": "approved",
       "lastUpdated": "2026-11-24",
       "careerId": "bosch"
@@ -269,15 +291,15 @@
       "analysis": "Use diagnostic support and field visits to understand the practical implications of manufacturer requirements.",
       "contribution": "I provided diagnostic support, reported technical quality findings and developed diagnostic guidance and training materials.",
       "actions": [
-        "Supported complex diagnostics, monitored technical product quality and reported findings to manufacturers.",
-        "Developed diagnostic guidance and training materials and supported dealer competence development.",
-        "Contributed to international technical support and translated manufacturer requirements into practical service operations."
+        "Developed practical diagnostic procedures and training materials.",
+        "Used targeted support and training to develop dealer network competence.",
+        "Coordinated technical information and support with the manufacturer, importers and dealers."
       ],
-      "results": "The work improved technical cooperation, knowledge sharing and diagnostic support practices.",
+      "results": "Technical support response times improved to approximately one hour or less. Recurring technical support requests decreased through targeted training, diagnostic guidance and field support. During the SEAT assignment, I initiated an internship programme and contributed to developing manufacturer–importer cooperation.",
       "lessonsLearned": "Field observations help connect manufacturer guidance with the problems dealer technicians encounter in practice.",
       "transferableCompetencies": "Cross-organisational integration, international cooperation, technical-commercial translation and knowledge management.",
       "status": "completed",
-      "evidenceStatus": "qualitative",
+      "evidenceStatus": "owner-supplied",
       "publicationStatus": "approved",
       "lastUpdated": "2026-11-24",
       "careerId": "vv-auto"
@@ -288,13 +310,13 @@
       "background": "Developing operational capabilities and technical service delivery in commercial vehicle telematics, camera systems and fleet management.",
       "challenge": "Connect customer requirements, technical delivery, installation, documentation and commercial processes as service operations grow.",
       "analysis": "Standardise the process used to manage customer-specific variation.",
-      "contribution": "I focus on service delivery, process design and business requirements for ERP workflows, and contribute to quality and information security preparations.",
+      "contribution": "I design business processes, define ERP business requirements and workflows, and develop technical service delivery and documentation.",
       "actions": [
-        "Define business processes and responsibilities across sales, delivery, installation, documentation and billing readiness.",
-        "Translate operational requirements into ERP functionality and improve how operational information is organised and accessed.",
-        "Develop technical service delivery and partner cooperation, and contribute to quality and information security preparations."
+        "Define workflows across sales, delivery, installation, documentation and billing readiness.",
+        "Coordinate customer, supplier and installation partner requirements.",
+        "Contribute to ISO 9001 and ISO 27001 preparations."
       ],
-      "results": "Work is ongoing across workflows, service delivery, documentation and management system preparations.",
+      "results": "Business process design, ERP requirements, service delivery development and documentation are ongoing, alongside partner coordination and preparations for ISO 9001 and ISO 27001.",
       "lessonsLearned": "Customer-specific services can remain flexible while the process for handling variation becomes consistent.",
       "transferableCompetencies": "Operating model development, workflow design, ERP requirements, technical service delivery and partner cooperation.",
       "status": "ongoing",
