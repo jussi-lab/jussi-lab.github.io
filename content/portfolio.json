@@ -1,0 +1,66 @@
+{
+  "name": "Jussi Rahkama",
+  "location": "Helsinki, Finland",
+  "contact": "https://linkedin.com/in/jussi-rahkama/",
+  "headline": "Turning complex operations into working systems.",
+  "supportingHeadline": "Connecting people, technology, processes and business.",
+  "summary": "I bring approximately 30 years of automotive experience, from vehicle electrical systems and diagnostics to technical training, international manufacturer support, service management and operational transformation.",
+  "competencies": [
+    "Technical Operations Leadership", "Operational Transformation",
+    "Automotive and Mobility Technology", "People Development",
+    "Business Process Development", "Systems Thinking",
+    "AI-assisted Application Development", "Continuous Improvement"
+  ],
+  "career": [
+    {"employer":"Inchcape Motors Finland","role":"Aftersales Manager","period":"Dec 2022 – Jun 2025","summary":"Led Jaguar and Land Rover aftersales turnaround, launched Mazda and Xpeng service operations and prepared new service locations."},
+    {"employer":"Schmiedmann","role":"Service Manager","period":"Oct 2019 – Dec 2022","summary":"Established and developed BMW and MINI service operations, recruited and trained staff and developed an SAP-based communication workflow."},
+    {"employer":"Autotalo Laakkonen","role":"Workshop Manager","period":"Jan – Sep 2019","summary":"Managed 27 employees with HR responsibility. Led a workshop turnaround and held facility, environmental and quality responsibilities."},
+    {"employer":"Bosch","role":"Automotive Technical Trainer","period":"Dec 2017 – Jan 2019","summary":"Re-established automotive technical training operations in Finland, with a focus on diagnostic equipment and technical competence."},
+    {"employer":"VV-Auto","role":"Technical Product Support and Training","period":"May 2013 – Nov 2017","summary":"Supported vehicle diagnostics, technical quality monitoring and training in cooperation with the manufacturer and dealer network."},
+    {"employer":"SEAT S.A.","role":"International Technical Product Support","period":"Nov 2015 – Apr 2016","summary":"Worked in Martorell, Spain, on international technical support and cooperation among the manufacturer, importers and dealers."},
+    {"employer":"Earlier career","role":"Automotive technical operations","period":"","summary":"Vehicle electrical systems, diagnostics, product testing, installation instructions, entrepreneurship and technical team leadership in motorsport."}
+  ],
+  "caseStudies": [
+    {
+      "employer":"Inchcape Motors Finland","role":"Aftersales Manager",
+      "project":"Aftersales turnaround and service launches",
+      "challenge":"Turn around Jaguar and Land Rover aftersales while bringing Mazda and Xpeng service operations online.",
+      "actions":"Developed team structures, operational processes and the customer experience. Prepared new service locations.",
+      "results":"+26 points in Net Promoter Score (NPS). Mazda and Xpeng service operations launched.",
+      "metric":{"value":"+26","label":"NPS points","context":"Aftersales turnaround at Inchcape Motors Finland"},
+      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+    },
+    {
+      "employer":"Schmiedmann","role":"Service Manager",
+      "project":"Building BMW and MINI service capacity",
+      "challenge":"Establish and develop BMW and MINI service operations.",
+      "actions":"Recruited and trained staff, developed service processes and built an SAP-based communication workflow.",
+      "results":"Service capacity doubled while maintaining profitability.",
+      "metric":{"value":"2×","label":"Service capacity","context":"BMW and MINI service at Schmiedmann"},
+      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+    },
+    {
+      "employer":"Autotalo Laakkonen","role":"Workshop Manager",
+      "project":"Clarifying roles in a workshop turnaround",
+      "challenge":"Improve workshop operations while managing people, facilities and quality responsibilities.",
+      "actions":"Led a team of 27 employees with HR responsibilities and clarified roles during the turnaround.",
+      "results":"Defined clearer workshop roles as part of the operational turnaround.",
+      "metric":{"value":"27","label":"Employees managed","context":"Workshop leadership at Autotalo Laakkonen"},
+      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+    }
+  ],
+  "leadership": {
+    "heading":"Make the work clear enough to improve.",
+    "body":"I believe people do their best work when they understand what they own, have the skills to do it and can raise problems early. I look at the whole operation, especially the handoffs where information, decisions or responsibility can get lost.",
+    "principles":[
+      {"title":"Clarify ownership","body":"Make responsibilities and handoffs explicit so people know who can make a decision and where to go for support."},
+      {"title":"Build competence","body":"Use training and feedback to build confidence in everyday work, from technical diagnosis to customer communication."},
+      {"title":"Improve continuously","body":"Observe how the process works in practice, fix recurring friction and use feedback to guide the next change."}
+    ]
+  },
+  "development": [
+    {"id":"technology","title":"Technology and AI","status":"Ongoing development","body":"My current development areas include vehicle telematics, fleet management and operational ERP and workflow concepts. I use AI-assisted application development to explore how operational requirements can take shape in prototypes and workflow tools."},
+    {"id":"automotive","title":"Automotive 2.0","status":"Independent initiative","body":"Automotive 2.0 explores future automotive operating models. It asks how service networks can develop technical competence, share operational information and organize work as vehicle technology and customer needs change."},
+    {"id":"mobility","title":"Autonomous Mobility","status":"Area of interest","body":"My interest is in the operations that support autonomous fleets, including vehicle readiness, maintenance coordination, escalation and technical training. Aftersales, diagnostics and service-network experience provide a transferable perspective on that work."}
+  ]
+}
