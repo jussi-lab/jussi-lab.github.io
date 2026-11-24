@@ -19,3 +19,5 @@ Use this shared file for repository guidance. Claude Code can import it from
 - Run `python3 scripts/build.py` and `python3 scripts/check.py`. For UI changes,
   inspect mobile and desktop layouts, keyboard behavior and both color modes.
 - Open changes for review. Merge and deploy only with owner approval.
+- Track missing content and approval status in `PORTFOLIO_ROADMAP.md`. Keep
+  optional sections off the public site until approved copy is available.

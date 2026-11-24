@@ -84,7 +84,9 @@ button, summary { font: inherit; font-size: .875rem; cursor: pointer; border: 1p
 .metric-grid, .case-grid, .principles, .development-grid, .profile-grid { display: grid; gap: 1rem; }
 .metric { border-top: 1px solid var(--line); padding: .85rem 0; }
 .metric strong { color: var(--accent); font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -.06em; line-height: 1; font-variant-numeric: tabular-nums; }
-.metric h3 { margin-block: .4rem .25rem; }
+.metric h3, .metric h4 { margin-block: .4rem .25rem; font-size: 1.25rem; line-height: 1.12; letter-spacing: -.035em; }
+.achievement-groups { display: grid; gap: 1rem; }
+.achievement-group > h3 { margin-bottom: .65rem; font-size: 1rem; }
 .lede { font-size: clamp(1.13rem, 2vw, 1.4rem); max-width: 45ch; }
 .competencies { display: flex; flex-wrap: wrap; align-content: start; gap: .5rem; margin: 0; padding: 0; list-style: none; }
 .competencies li { background: var(--panel); border: 1px solid var(--line); padding: .3rem .65rem; border-radius: .35rem; font-size: .875rem; }
@@ -112,7 +114,9 @@ button, summary { font: inherit; font-size: .875rem; cursor: pointer; border: 1p
 .cv h2 { font-size: 1.6rem; margin-block: 1.6rem .65rem; }
 @media (min-width: 40rem) {
   .wrap { width: min(100% - 3rem, 72rem); }
-  .metric-grid, .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .achievement-groups { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+  .metric-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); }
+  .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .timeline li { grid-template-columns: minmax(13rem, 1fr) minmax(0, 2fr); }
 }
 @media (min-width: 58rem) {
@@ -134,3 +138,10 @@ button, summary { font: inherit; font-size: .875rem; cursor: pointer; border: 1p
   .cv { width: 100%; padding: 0; }
   .timeline li { break-inside: avoid; }
 }
+
+.current-role { margin-top: .8rem; font-weight: 700; }
+.hero .current-role { color: #f2f7ff; }
+.positioning { margin-top: .8rem; }
+.section-link { margin-top: 1.25rem; }
+.detail { max-width: 72ch; }
+.detail .lede, .detail .metric { margin-top: 1rem; }

@@ -4,7 +4,8 @@
   "contact": "https://linkedin.com/in/jussi-rahkama/",
   "headline": "Turning complex operations into working systems.",
   "supportingHeadline": "Connecting people, technology, processes and business.",
-  "summary": "I bring approximately 30 years of automotive experience, from vehicle electrical systems and diagnostics to technical training, international manufacturer support, service management and operational transformation.",
+  "summary": "My background spans approximately 30 years in the automotive sector, from vehicle electrical systems and diagnostics to technical training, international manufacturer support and aftersales leadership. I bring hands-on technical experience and a systems perspective to operational transformation, business development and mobility technology.",
+  "positioning": ["Technical Operations Leadership", "Operational Transformation", "Business Development", "Mobility Technology", "Systems Thinking"],
   "competencies": [
     "Technical Operations Leadership", "Operational Transformation",
     "Automotive and Mobility Technology", "People Development",
@@ -12,6 +13,7 @@
     "AI-assisted Application Development", "Continuous Improvement"
   ],
   "career": [
+    {"employer":"Iris Nordic / Javipro Oy","role":"Chief Operating Officer (COO)","current":true},
     {"employer":"Inchcape Motors Finland","role":"Aftersales Manager","period":"Dec 2022 – Jun 2025","summary":"Led Jaguar and Land Rover aftersales turnaround, launched Mazda and Xpeng service operations and prepared new service locations."},
     {"employer":"Schmiedmann","role":"Service Manager","period":"Oct 2019 – Dec 2022","summary":"Established and developed BMW and MINI service operations, recruited and trained staff and developed an SAP-based communication workflow."},
     {"employer":"Autotalo Laakkonen","role":"Workshop Manager","period":"Jan – Sep 2019","summary":"Managed 27 employees with HR responsibility. Led a workshop turnaround and held facility, environmental and quality responsibilities."},
@@ -22,6 +24,7 @@
   ],
   "caseStudies": [
     {
+      "slug":"inchcape-aftersales",
       "employer":"Inchcape Motors Finland","role":"Aftersales Manager",
       "project":"Aftersales turnaround and service launches",
       "challenge":"Turn around Jaguar and Land Rover aftersales while bringing Mazda and Xpeng service operations online.",
@@ -31,6 +34,7 @@
       "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
     },
     {
+      "slug":"schmiedmann-service",
       "employer":"Schmiedmann","role":"Service Manager",
       "project":"Building BMW and MINI service capacity",
       "challenge":"Establish and develop BMW and MINI service operations.",
@@ -40,12 +44,13 @@
       "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
     },
     {
+      "slug":"laakkonen-workshop",
       "employer":"Autotalo Laakkonen","role":"Workshop Manager",
       "project":"Clarifying roles in a workshop turnaround",
       "challenge":"Improve workshop operations while managing people, facilities and quality responsibilities.",
       "actions":"Led a team of 27 employees with HR responsibilities and clarified roles during the turnaround.",
       "results":"Defined clearer workshop roles as part of the operational turnaround.",
-      "metric":{"value":"27","label":"Employees managed","context":"Workshop leadership at Autotalo Laakkonen"},
+      "metric":{"value":"27","label":"Employees managed","kind":"scope","context":"Workshop leadership at Autotalo Laakkonen"},
       "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
     }
   ],
@@ -58,6 +63,11 @@
       {"title":"Improve continuously","body":"Observe how the process works in practice, fix recurring friction and use feedback to guide the next change."}
     ]
   },
+  "credentials": {},
+  "expertise": [],
+  "projects": [],
+  "articles": [],
+  "feedback": {},
   "development": [
     {"id":"technology","title":"Technology and AI","status":"Ongoing development","body":"My current development areas include vehicle telematics, fleet management and operational ERP and workflow concepts. I use AI-assisted application development to explore how operational requirements can take shape in prototypes and workflow tools."},
     {"id":"automotive","title":"Automotive 2.0","status":"Independent initiative","body":"Automotive 2.0 explores future automotive operating models. It asks how service networks can develop technical competence, share operational information and organize work as vehicle technology and customer needs change."},

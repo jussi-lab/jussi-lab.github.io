@@ -1,10 +1,11 @@
 """Check generated local links, landmarks and index metadata."""
+from html import escape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
-from build import CONTACT, SECTIONS, SITE
+from build import CONTACT, DATA, SECTIONS, SITE, approved_cases, case_path
 
 DIST = Path(__file__).resolve().parents[1] / "dist"
 
@@ -46,7 +47,18 @@ class Page(HTMLParser):
 
 
 def main():
-    pages = {route: Page(DIST / route.lstrip("/") / "index.html") for route in ("/", "/cv/")}
+    pages = {
+        "/" + ("" if path.parent == DIST else path.parent.relative_to(DIST).as_posix() + "/"): Page(path)
+        for path in DIST.rglob("index.html")
+    }
+    expected = {"/", "/cv/", "/leadership/"} | {case_path(item) for item in approved_cases()}
+    assert expected == pages.keys(), "Unexpected generated routes"
+    current = [item for item in DATA["career"] if item.get("current")]
+    assert len(current) == 1, "Exactly one role should be marked current"
+    position = f'{escape(current[0]["role"])} at {escape(current[0]["employer"])}'
+    for route in ("/", "/cv/"):
+        text = (DIST / route.lstrip("/") / "index.html").read_text(encoding="utf-8")
+        assert text.count('class="current-role"') == 1 and position in text, route
     assert set(SECTIONS) <= pages["/"].ids, "Required section missing"
     for route, page in pages.items():
         assert page.language == "en" and page.h1 == page.main == 1, route
@@ -69,7 +81,7 @@ def main():
     sitemap = ElementTree.parse(DIST / "sitemap.xml")
     assert {item.text for item in sitemap.findall(".//{*}loc")} == {SITE + route for route in pages}
     assert f"Sitemap: {SITE}/sitemap.xml" in (DIST / "robots.txt").read_text()
-    print("Checked both pages, ten sections, accessible labels, internal links, SEO metadata and sitemap.")
+    print(f"Checked {len(pages)} pages, ten home sections, the current role, accessible labels, internal links, SEO metadata and sitemap.")
 
 
 if __name__ == "__main__":

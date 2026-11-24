@@ -42,3 +42,33 @@ that branch). Confirm the Pages URL and its CV route after deployment.
 Each subsequent release also requires a manual workflow run.
 
 See [AGENTS.md](AGENTS.md) for maintenance and publishing guidance.
+
+## Extend the portfolio
+
+Career entries require `employer` and `role`. Add an approved `period` and
+`summary` when available. Set `current: true` on the current entry to feature
+its employer and title on the homepage and CV. Both timelines read the same
+ordered career list. `positioning` defines the homepage profile focus areas.
+
+A case study uses a unique lowercase hyphenated `slug` for its detail-page
+URL. The core Challenge, Actions and Results fields support the summary card.
+Add `background`, `analysis`, `lessonsLearned` and
+`transferableCompetencies` when approved. Optional `metric.kind: "scope"`
+identifies the scale of responsibility. The default kind is a measured result.
+Builds regenerate the sitemap and output so retired routes do not linger.
+
+- `leadership.topics` takes entries with `title` and `body` for the leadership page.
+- `credentials` supports lists of approved `education`, `languages` and
+  `certifications` entries in the CV.
+- `expertise` and `articles` take entries with `title` and `body`.
+- `feedback` takes lists of title and body entries under `recommendations`,
+  `assessments` or `professional`. Use names or quotes only with permission.
+- `projects` takes `title`, `body` and a `status` of `completed`,
+  `in-progress`, `concept` or `future`.
+
+Populate optional sections once there is approved content. Existing development
+summaries use `development`. If expanding an existing summary into a project,
+publish one maintained description for it.
+
+See [PORTFOLIO_ROADMAP.md](PORTFOLIO_ROADMAP.md) for planned content and the
+material needed from the ChatGPT project.
