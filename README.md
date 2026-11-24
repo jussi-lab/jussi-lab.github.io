@@ -22,15 +22,9 @@ Use the print button on the CV page to print or save a PDF with the browser.
 renders shared layout, career records, metrics and case studies. `src/` holds
 the CSS, progressive enhancements and social assets. `dist/` is generated.
 
-Each case study has an `employer`, `role`, `project`, `challenge`, `actions`,
-`results`, `evidenceStatus`, `publicationStatus` and `lastUpdated` in ISO date
-format. Set `publicationStatus` to `approved` after the owner confirms
-publication. `owner-supplied` identifies a claim supplied and approved by the
-owner. Use `verified` when its basis has also been checked. The build rejects
-other evidence and publication statuses for case studies. The optional
-`metric` field supplies the achievement display. Review other public fields
-against the same standards before committing. Keep unresolved claims and
-private evidence outside this repository.
+Keep private evidence and unresolved claims outside the repository. Review
+timeline entries, metadata, CV text and case studies against owner approval
+before adding changes to a public branch.
 
 ## GitHub Pages
 
@@ -42,3 +36,42 @@ that branch). Confirm the Pages URL and its CV route after deployment.
 Each subsequent release also requires a manual workflow run.
 
 See [AGENTS.md](AGENTS.md) for maintenance and publishing guidance.
+
+## Extend the portfolio
+
+Career entries have stable IDs. Home and CV render the same current role and
+timeline, including assignments nested under the employer. Case studies use
+`careerId` to reference an employer, role and dates without duplicating them.
+Use a unique lowercase slug for each case. Supply professional context,
+challenge, approach, personal contribution, team and project actions, results or current status, lessons and
+transferable capabilities. Mark ongoing work with `status: "ongoing"`.
+Optional `metric.kind: "scope"` identifies the scale of responsibility.
+Evidence status identifies the nature of a claim. Publication status records
+owner approval separately.
+
+The homepage profile is a list of paragraphs. The CV uses the opening profile
+paragraphs and the same competency groups. Qualification records support titles,
+organisations, historical years and notes. `operatingModel`, `leadership`,
+`insight` and `development` hold the working approach, philosophy, insight
+and technology material. Optional `projects` use `completed`, `in-progress`,
+`concept` or `future`. Optional `feedback` lists sit under `recommendations`,
+`assessments` or `professional`. Use names or quotes only with permission.
+
+## Review unpublished content locally
+
+Run `python3 scripts/build.py --review` and `python3 scripts/check.py --review`.
+The output is separate from production in `dist-review/`. Serve that directory
+only in a private environment. A production build requires approved content
+at the portfolio and evidence-record levels. Keep pending files outside
+public Git branches and pull requests.
+
+See [PORTFOLIO_ROADMAP.md](PORTFOLIO_ROADMAP.md) for outstanding review tasks.
+
+### Automotive 2.0
+
+The Automotive 2.0 development record contains the project introduction,
+development areas, research methodology, concept studies and references to
+existing career case slugs. Each concept has a stable slug, nine narrative
+fields, an evidence status and separate publication approval. Concept pages,
+cross-links and sitemap entries are generated from these records. Keep private
+research, sources and unapproved material outside the public repository.

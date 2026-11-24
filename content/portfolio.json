@@ -3,64 +3,789 @@
   "location": "Helsinki, Finland",
   "contact": "https://linkedin.com/in/jussi-rahkama/",
   "headline": "Turning complex operations into working systems.",
-  "supportingHeadline": "Connecting people, technology, processes and business.",
-  "summary": "I bring approximately 30 years of automotive experience, from vehicle electrical systems and diagnostics to technical training, international manufacturer support, service management and operational transformation.",
-  "competencies": [
-    "Technical Operations Leadership", "Operational Transformation",
-    "Automotive and Mobility Technology", "People Development",
-    "Business Process Development", "Systems Thinking",
-    "AI-assisted Application Development", "Continuous Improvement"
+  "supportingHeadline": "I help technical service businesses build, improve and scale their operations by connecting people, processes, technology and business.",
+  "industryExperience": "Approximately 30 years of industry experience",
+  "summary": [
+    "I am an operations and development leader with approximately 30 years of industry experience in automotive and technical services. My career has included international manufacturer cooperation, people leadership and business development.",
+    "My career has progressed from hands-on technical work and entrepreneurship to technical training, international product support, operational management, business transformation and the development of technology-driven operations.",
+    "My core strength is understanding how complex operations work in practice, identifying the underlying causes of operational problems and building structures that enable people, processes, technology and business to work together effectively.",
+    "I am particularly motivated by environments where operations need to be established, integrated, transformed or scaled.",
+    "I believe sustainable development starts with a reliable operational foundation. Once responsibilities, processes, resources and systems are aligned, performance can be improved systematically and continuously.",
+    "My approach combines practical technical understanding, commercial awareness, people development, systems thinking and long-term customer value.",
+    "Technology is not an objective in itself. Its purpose is to solve real problems, improve reliability and enable people to perform their work effectively."
   ],
+  "positioning": [
+    "Operational Transformation",
+    "Technical Operations Leadership",
+    "Business Development",
+    "Systems Thinking"
+  ],
+  "competencies": {
+    "Operational leadership": [
+      "Operational transformation",
+      "Business operations development",
+      "Service operations leadership",
+      "Organisational integration",
+      "Operational scaling",
+      "New service and business launches",
+      "Operational reliability",
+      "Continuous improvement"
+    ],
+    "Systems thinking and business development": [
+      "Root cause analysis",
+      "Cross-functional integration",
+      "Business process design",
+      "Operating model development",
+      "Strategy execution",
+      "Business systems requirements",
+      "Operational economics",
+      "Service and business concept development"
+    ],
+    "People and leadership": [
+      "Team development",
+      "Coaching and mentoring",
+      "Technical training",
+      "Change leadership",
+      "Competence development",
+      "Cross-cultural collaboration",
+      "Stakeholder cooperation",
+      "Employee engagement"
+    ],
+    "Technology": [
+      "Vehicle electrical systems",
+      "Automotive diagnostics",
+      "Technical product support",
+      "Connected vehicle technology",
+      "Vehicle telematics",
+      "Video telematics",
+      "Fleet management solutions",
+      "ERP and digital workflows",
+      "AI-assisted application development"
+    ]
+  },
   "career": [
-    {"employer":"Inchcape Motors Finland","role":"Aftersales Manager","period":"Dec 2022 – Jun 2025","summary":"Led Jaguar and Land Rover aftersales turnaround, launched Mazda and Xpeng service operations and prepared new service locations."},
-    {"employer":"Schmiedmann","role":"Service Manager","period":"Oct 2019 – Dec 2022","summary":"Established and developed BMW and MINI service operations, recruited and trained staff and developed an SAP-based communication workflow."},
-    {"employer":"Autotalo Laakkonen","role":"Workshop Manager","period":"Jan – Sep 2019","summary":"Managed 27 employees with HR responsibility. Led a workshop turnaround and held facility, environmental and quality responsibilities."},
-    {"employer":"Bosch","role":"Automotive Technical Trainer","period":"Dec 2017 – Jan 2019","summary":"Re-established automotive technical training operations in Finland, with a focus on diagnostic equipment and technical competence."},
-    {"employer":"VV-Auto","role":"Technical Product Support and Training","period":"May 2013 – Nov 2017","summary":"Supported vehicle diagnostics, technical quality monitoring and training in cooperation with the manufacturer and dealer network."},
-    {"employer":"SEAT S.A.","role":"International Technical Product Support","period":"Nov 2015 – Apr 2016","summary":"Worked in Martorell, Spain, on international technical support and cooperation among the manufacturer, importers and dealers."},
-    {"employer":"Earlier career","role":"Automotive technical operations","period":"","summary":"Vehicle electrical systems, diagnostics, product testing, installation instructions, entrepreneurship and technical team leadership in motorsport."}
+    {
+      "employer": "Iris Nordic",
+      "role": "Operations & Development Director",
+      "current": true,
+      "location": "Tuusula, Finland",
+      "period": "Oct 2025 – Present",
+      "summary": "Developing operational capabilities and technical service delivery in commercial vehicle telematics, camera systems and fleet management.",
+      "responsibilities": [
+        "Develop operational processes, technical service delivery models and scalable service operations.",
+        "Improve product and service documentation and digitalise operational workflows.",
+        "Define ERP business requirements, process logic, workflows and system requirements.",
+        "Work with customers, suppliers and installation partners to align technical, commercial and operational requirements.",
+        "Contribute to preparations for ISO 9001 and ISO 27001."
+      ],
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "iris-nordic"
+    },
+    {
+      "employer": "Inchcape Motors Finland",
+      "role": "Aftersales Manager",
+      "period": "Dec 2022 – Jun 2025",
+      "summary": "Led Jaguar and Land Rover aftersales turnaround, launched Mazda and Xpeng service operations and prepared new service locations.",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "inchcape"
+    },
+    {
+      "employer": "Schmiedmann",
+      "role": "Service Manager",
+      "period": "Oct 2019 – Dec 2022",
+      "summary": "Established and developed BMW and MINI service operations, recruited and trained staff and developed an SAP-based communication workflow.",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "schmiedmann"
+    },
+    {
+      "employer": "Autotalo Laakkonen",
+      "role": "Workshop Manager",
+      "period": "Jan – Sep 2019",
+      "summary": "Managed 27 employees with HR responsibility. Led a workshop turnaround and held facility, environmental and quality responsibilities.",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "laakkonen"
+    },
+    {
+      "employer": "Bosch",
+      "role": "Automotive Technical Trainer",
+      "period": "Dec 2017 – Jan 2019",
+      "summary": "Re-established automotive technical training operations in Finland, with a focus on diagnostic equipment and technical competence.",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "bosch"
+    },
+    {
+      "employer": "VV-Auto",
+      "role": "Technical Product Support and Training",
+      "period": "May 2013 – Nov 2017",
+      "summary": "Supported vehicle diagnostics, technical quality monitoring and training in cooperation with the manufacturer and dealer network.",
+      "assignment": {
+        "employer": "SEAT S.A.",
+        "role": "International Technical Product Support",
+        "period": "Nov 2015 – Apr 2016",
+        "summary": "International assignment during VV-Auto employment, supporting manufacturer, importer and dealer cooperation.",
+        "location": "Martorell, Spain",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "vv-auto"
+    },
+    {
+      "employer": "Uudenmaan Autovarustelu",
+      "role": "Automotive technical work",
+      "period": "2010–2013",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "uudenmaan-autovarustelu"
+    },
+    {
+      "employer": "Decatec",
+      "role": "Entrepreneurship and subcontracting",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "decatec"
+    },
+    {
+      "employer": "Earlier experience",
+      "role": "Technical work and motorsport",
+      "summary": "Automotive mechanic and vehicle electrical systems work, accessory installation, product testing, installation instructions, technical support, automotive technical training, service offering development and motorsport technical operations and team leadership.",
+      "evidenceStatus": "documented",
+      "publicationStatus": "approved",
+      "id": "earlier-experience"
+    }
   ],
   "caseStudies": [
     {
-      "employer":"Inchcape Motors Finland","role":"Aftersales Manager",
-      "project":"Aftersales turnaround and service launches",
-      "challenge":"Turn around Jaguar and Land Rover aftersales while bringing Mazda and Xpeng service operations online.",
-      "actions":"Developed team structures, operational processes and the customer experience. Prepared new service locations.",
-      "results":"+26 points in Net Promoter Score (NPS). Mazda and Xpeng service operations launched.",
-      "metric":{"value":"+26","label":"NPS points","context":"Aftersales turnaround at Inchcape Motors Finland"},
-      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+      "slug": "inchcape-aftersales",
+      "project": "Transforming aftersales operations",
+      "challenge": "Improve operational performance, customer experience, team stability and profitability.",
+      "contribution": "As Aftersales Manager, I led Jaguar and Land Rover aftersales improvements and supported the Mazda and XPENG service launches.",
+      "actions": [
+        "Rebuilt team structures and clarified responsibilities.",
+        "Improved customer communication, workflow management, workshop planning and capacity management.",
+        "Improved documentation and billing processes.",
+        "Supported the launch of Mazda and XPENG service operations and development of additional locations."
+      ],
+      "results": "Customer Net Promoter Score improved by 26 points. Mazda and XPENG service operations launched.",
+      "metric": {
+        "value": "+26",
+        "label": "Customer NPS points",
+        "context": "Aftersales turnaround at Inchcape Motors Finland"
+      },
+      "evidenceStatus": "owner-supplied",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "background": "Managed Jaguar and Land Rover aftersales during a period that also included service launches for Mazda and XPENG.",
+      "analysis": "Establish a reliable operational foundation first. Involve employees in identifying recurring problems and prioritise the issues with the greatest overall impact.",
+      "lessonsLearned": "A reliable operational foundation gives teams a basis for more advanced improvements.",
+      "transferableCompetencies": "Operational transformation, team development, process improvement, commercial performance and operational reliability.",
+      "status": "completed",
+      "careerId": "inchcape"
     },
     {
-      "employer":"Schmiedmann","role":"Service Manager",
-      "project":"Building BMW and MINI service capacity",
-      "challenge":"Establish and develop BMW and MINI service operations.",
-      "actions":"Recruited and trained staff, developed service processes and built an SAP-based communication workflow.",
-      "results":"Service capacity doubled while maintaining profitability.",
-      "metric":{"value":"2×","label":"Service capacity","context":"BMW and MINI service at Schmiedmann"},
-      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+      "slug": "schmiedmann-service",
+      "project": "Scaling service operations while maintaining profitability",
+      "challenge": "Establish and develop service operations at the larger facility.",
+      "contribution": "As Service Manager, I developed the operating model for the larger workshop and led the development of BMW and MINI service operations.",
+      "actions": [
+        "Recruited and developed employees and supported customer acquisition and service product development.",
+        "Improved documentation and communication, including SAP-based workflows.",
+        "Adapted operations to changing market conditions during the pandemic."
+      ],
+      "results": "Service capacity doubled while maintaining profitability.",
+      "metric": {
+        "value": "2×",
+        "label": "Service capacity",
+        "context": "Schmiedmann, while maintaining profitability"
+      },
+      "evidenceStatus": "owner-supplied",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "background": "Managed BMW and MINI service operations following relocation to a larger facility.",
+      "analysis": "Develop an operating model for increased capacity while keeping profitability in view.",
+      "lessonsLearned": "Capacity planning, team development and communication workflows need to develop together as service operations scale.",
+      "transferableCompetencies": "Operational scaling, commercial awareness, capacity management, team development and process digitalisation.",
+      "status": "completed",
+      "careerId": "schmiedmann"
     },
     {
-      "employer":"Autotalo Laakkonen","role":"Workshop Manager",
-      "project":"Clarifying roles in a workshop turnaround",
-      "challenge":"Improve workshop operations while managing people, facilities and quality responsibilities.",
-      "actions":"Led a team of 27 employees with HR responsibilities and clarified roles during the turnaround.",
-      "results":"Defined clearer workshop roles as part of the operational turnaround.",
-      "metric":{"value":"27","label":"Employees managed","context":"Workshop leadership at Autotalo Laakkonen"},
-      "evidenceStatus":"owner-supplied","publicationStatus":"approved","lastUpdated":"2026-11-24"
+      "slug": "laakkonen-workshop",
+      "project": "Integrating operations following organisational change",
+      "challenge": "Develop a coherent operating model following the integration of previously separate automotive businesses.",
+      "contribution": "As Workshop Manager, I clarified responsibilities and led operational and personnel changes during the integration.",
+      "actions": [
+        "Clarified roles, responsibilities and ownership.",
+        "Developed cooperation across teams and established clearer workflows.",
+        "Managed operational and personnel changes."
+      ],
+      "results": "The reported outcomes were clearer operations, improved financial performance and improved customer satisfaction.",
+      "metric": {
+        "value": "27",
+        "label": "Employees managed",
+        "kind": "scope",
+        "context": "Workshop leadership at Autotalo Laakkonen"
+      },
+      "evidenceStatus": "qualitative",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "background": "Managed a workshop and 27 employees, including HR responsibilities. The remit covered performance, customer satisfaction, quality, facilities and environmental responsibilities.",
+      "analysis": "Translate business objectives into responsibilities that people can apply in daily work.",
+      "lessonsLearned": "Integration depends on explicit ownership and practical cooperation across teams.",
+      "transferableCompetencies": "Business integration, organisational change, responsibility design and people leadership.",
+      "status": "completed",
+      "careerId": "laakkonen"
+    },
+    {
+      "slug": "bosch-training",
+      "project": "Rebuilding technical training operations",
+      "background": "Re-established technical training for the Bosch Car Service network in Finland.",
+      "challenge": "Restore training operations after a period of inactivity and make the offer relevant to the local network.",
+      "analysis": "Identify needs with Bosch and the service network. Schedule training around Finnish working and holiday rhythms.",
+      "contribution": "As Automotive Technical Trainer, I designed the annual calendar, adapted training materials and delivered technical and diagnostic equipment training.",
+      "actions": [
+        "Designed the annual calendar and adapted international materials to local requirements.",
+        "Developed practical exercises, delivered and marketed training, and provided customer-specific diagnostic equipment training."
+      ],
+      "results": "Technical training operations resumed. The redesigned approach received positive feedback.",
+      "lessonsLearned": "Training design includes when participants can attend and how they can apply the learning in their work.",
+      "transferableCompetencies": "Establishing new operations, technical communication, competence development, customer understanding and commercialisation.",
+      "status": "completed",
+      "evidenceStatus": "qualitative",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "careerId": "bosch"
+    },
+    {
+      "slug": "vv-auto-seat",
+      "project": "Connecting manufacturer requirements with market operations",
+      "background": "Technical product support and training at VV-Auto included an international assignment with SEAT S.A. in Martorell, Spain, from November 2015 to April 2016.",
+      "challenge": "Improve cooperation and technical information flow across manufacturers, importers, dealer networks and technical specialists.",
+      "analysis": "Use diagnostic support and field visits to understand the practical implications of manufacturer requirements.",
+      "contribution": "I provided diagnostic support, reported technical quality findings and developed diagnostic guidance and training materials.",
+      "actions": [
+        "Supported complex diagnostics, monitored technical product quality and reported findings to manufacturers.",
+        "Developed diagnostic guidance and training materials and supported dealer competence development.",
+        "Contributed to international technical support and translated manufacturer requirements into practical service operations."
+      ],
+      "results": "The work improved technical cooperation, knowledge sharing and diagnostic support practices.",
+      "lessonsLearned": "Field observations help connect manufacturer guidance with the problems dealer technicians encounter in practice.",
+      "transferableCompetencies": "Cross-organisational integration, international cooperation, technical-commercial translation and knowledge management.",
+      "status": "completed",
+      "evidenceStatus": "qualitative",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "careerId": "vv-auto"
+    },
+    {
+      "slug": "iris-nordic-operations",
+      "project": "Building operational capabilities for a growing technology business",
+      "background": "Developing operational capabilities and technical service delivery in commercial vehicle telematics, camera systems and fleet management.",
+      "challenge": "Connect customer requirements, technical delivery, installation, documentation and commercial processes as service operations grow.",
+      "analysis": "Standardise the process used to manage customer-specific variation.",
+      "contribution": "I focus on service delivery, process design and business requirements for ERP workflows, and contribute to quality and information security preparations.",
+      "actions": [
+        "Define business processes and responsibilities across sales, delivery, installation, documentation and billing readiness.",
+        "Translate operational requirements into ERP functionality and improve how operational information is organised and accessed.",
+        "Develop technical service delivery and partner cooperation, and contribute to quality and information security preparations."
+      ],
+      "results": "Work is ongoing across workflows, service delivery, documentation and management system preparations.",
+      "lessonsLearned": "Customer-specific services can remain flexible while the process for handling variation becomes consistent.",
+      "transferableCompetencies": "Operating model development, workflow design, ERP requirements, technical service delivery and partner cooperation.",
+      "status": "ongoing",
+      "evidenceStatus": "ongoing",
+      "publicationStatus": "approved",
+      "lastUpdated": "2026-11-24",
+      "careerId": "iris-nordic"
     }
   ],
   "leadership": {
-    "heading":"Make the work clear enough to improve.",
-    "body":"I believe people do their best work when they understand what they own, have the skills to do it and can raise problems early. I look at the whole operation, especially the handoffs where information, decisions or responsibility can get lost.",
-    "principles":[
-      {"title":"Clarify ownership","body":"Make responsibilities and handoffs explicit so people know who can make a decision and where to go for support."},
-      {"title":"Build competence","body":"Use training and feedback to build confidence in everyday work, from technical diagnosis to customer communication."},
-      {"title":"Improve continuously","body":"Observe how the process works in practice, fix recurring friction and use feedback to guide the next change."}
+    "heading": "Leadership creates the conditions for people to succeed.",
+    "body": "People need a clear purpose, reliable operating conditions and the opportunity to improve their work.",
+    "principles": [
+      {
+        "title": "Purpose and direction",
+        "body": "People should understand what the organisation is trying to achieve, why it matters and how their work contributes."
+      },
+      {
+        "title": "Build stability before optimisation",
+        "body": "Sustainable improvement requires a reliable foundation of people, responsibilities, processes, resources and systems."
+      },
+      {
+        "title": "Strategy into everyday operations",
+        "body": "Translate strategic objectives into understandable actions and decisions people can apply in their work."
+      },
+      {
+        "title": "Respect for people",
+        "body": "Give people the opportunity to contribute, learn, raise concerns and improve the way work is performed."
+      },
+      {
+        "title": "Psychological safety and accountability",
+        "body": "Encourage people to identify problems early. Give them clear responsibilities and the support to address issues constructively."
+      },
+      {
+        "title": "Root cause thinking",
+        "body": "Examine how the operating environment, available information, instructions, competence and resources contributed to the problem."
+      },
+      {
+        "title": "Continuous improvement",
+        "body": "Use feedback and observations from the work to guide systematic improvement."
+      },
+      {
+        "title": "Lean and Toyota Way",
+        "body": "My thinking is influenced by the emphasis on continuous improvement, respect for people and practical problem-solving in Lean and the Toyota Way."
+      },
+      {
+        "title": "Meaningful work",
+        "body": "I value a clear purpose, responsible business practices and lasting improvements for customers, employees and the organisation."
+      },
+      {
+        "title": "Shared openness and fair feedback",
+        "body": "I see openness as a shared responsibility. I aim to consider feedback constructively and fairly, regardless of who raises it. Fair treatment can call for different support in different circumstances."
+      },
+      {
+        "title": "Local problem-solving with leadership support",
+        "body": "I prefer problems to be addressed where they are identified whenever practical. Leaders provide support and remain accountable for the operation as a whole."
+      },
+      {
+        "title": "Knowledge sharing and continuity",
+        "body": "I aim to make critical knowledge available beyond any one individual. Sharing it supports both professional development and continuity when responsibilities change."
+      },
+      {
+        "title": "Review what already works",
+        "body": "I review working processes as part of continuous improvement. When we decide to keep a process, we should be able to explain the reasons."
+      }
+    ],
+    "evidenceStatus": "professional-philosophy"
+  },
+  "credentials": {
+    "education": [
+      {
+        "title": "Automotive and Transport Mechanic",
+        "organisation": "Porvoo Vocational College",
+        "year": "1994",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "Specialist Qualification in Management and Business Management",
+        "organisation": "Stadin AO",
+        "note": "Coursework completed. Final assessments pending.",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "High Voltage Expert and electrical safety training",
+        "year": "2013",
+        "note": "Historical training and permissions included SFS 6002, limited S3 electrical qualification and a live-working permit.",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "Volkswagen Product Specialist certification",
+        "year": "2015",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "Presentation skills training",
+        "year": "2015",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "Volkswagen Service Manager programme",
+        "year": "2019",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "Jaguar Land Rover Aftersales Manager certification",
+        "year": "2023",
+        "evidenceStatus": "documented",
+        "publicationStatus": "approved"
+      }
+    ],
+    "languages": [
+      {
+        "title": "Finnish",
+        "note": "Native",
+        "evidenceStatus": "owner-supplied",
+        "publicationStatus": "approved"
+      },
+      {
+        "title": "English",
+        "note": "Working proficiency",
+        "evidenceStatus": "owner-supplied",
+        "publicationStatus": "approved"
+      }
     ]
   },
+  "expertise": [],
+  "projects": [],
+  "articles": [],
+  "feedback": {},
   "development": [
-    {"id":"technology","title":"Technology and AI","status":"Ongoing development","body":"My current development areas include vehicle telematics, fleet management and operational ERP and workflow concepts. I use AI-assisted application development to explore how operational requirements can take shape in prototypes and workflow tools."},
-    {"id":"automotive","title":"Automotive 2.0","status":"Independent initiative","body":"Automotive 2.0 explores future automotive operating models. It asks how service networks can develop technical competence, share operational information and organize work as vehicle technology and customer needs change."},
-    {"id":"mobility","title":"Autonomous Mobility","status":"Area of interest","body":"My interest is in the operations that support autonomous fleets, including vehicle readiness, maintenance coordination, escalation and technical training. Aftersales, diagnostics and service-network experience provide a transferable perspective on that work."}
-  ]
+    {
+      "id": "technology",
+      "title": "Technology and AI",
+      "status": "Experience and development",
+      "body": "I use technology and artificial intelligence to understand problems, develop concepts and translate operational requirements into prototypes and digital workflows. I judge a solution by how it improves the way people and organisations work.",
+      "sections": [
+        {
+          "title": "Professional technology experience",
+          "body": "Vehicle electrical systems, diagnostic equipment, technical product support, connected vehicles, vehicle and video telematics and fleet management."
+        },
+        {
+          "title": "Business systems and process development",
+          "body": "SAP-based communication workflows in service operations and ERP requirements and workflow design from a business perspective at Iris Nordic."
+        },
+        {
+          "title": "AI-assisted application development",
+          "body": "Personal prototyping and workflow exploration use AI to test concepts and make requirements concrete."
+        },
+        {
+          "title": "Independent concepts and ongoing exploration",
+          "body": "Automotive 2.0 and fleet operations concepts explore how service models, operational information and technology can work together."
+        },
+        {
+          "title": "Completed and deployed work",
+          "body": "This professional portfolio is a live static website developed with AI assistance."
+        }
+      ],
+      "evidenceStatus": "ongoing"
+    },
+    {
+      "id": "automotive",
+      "title": "Automotive 2.0",
+      "status": "Independent research and conceptual development – ongoing",
+      "body": "Automotive 2.0 explores how automotive service businesses could align people, leadership, workflows, technology, customer experience and operational economics.",
+      "evidenceStatus": "independent-concept",
+      "project": {
+        "title": "Automotive 2.0 – Rethinking Automotive Service Operations",
+        "subtitle": "Designing an integrated operating model for sustainable, reliable and customer-focused automotive service businesses.",
+        "introduction": [
+          "Automotive 2.0 explores how automotive service operations could be redesigned by examining the relationships between people, processes, technology, leadership, customer experience and financial performance.",
+          "The initiative examines the whole operating system, including how decisions in one function affect work in another. It aims to develop practical operating principles that support employees, improve service reliability and create lasting customer and business value.",
+          "The work is at the research and concept stage. Proposed workflows and system requirements are candidates for evaluation."
+        ],
+        "areas": [
+          {
+            "title": "People, Leadership & Organisational Culture",
+            "body": "Leadership can help employees contribute to strategic objectives and improve their work by making responsibilities, support and accountability clear.",
+            "topics": [
+              "Translate strategy into everyday work",
+              "Clarify responsibilities and decision boundaries",
+              "Encourage open communication and constructive feedback",
+              "Resolve problems close to where they occur",
+              "Maintain management accountability",
+              "Share critical operational knowledge",
+              "Consider feedback fairly regardless of its source",
+              "Review processes that already work",
+              "Balance psychological safety with professional accountability"
+            ]
+          },
+          {
+            "title": "Competence & Workforce Development",
+            "body": "Connect individual development with operational continuity. Adapt competence criteria to local work, responsibilities and applicable requirements.",
+            "topics": [
+              "Role-based competence requirements",
+              "Structured onboarding",
+              "Individual development and specialisation paths",
+              "Training and capacity planning",
+              "Qualification and certification tracking",
+              "Critical competence continuity",
+              "Knowledge sharing within teams",
+              "Future competence needs",
+              "Human-led assessment informed by relevant data"
+            ]
+          },
+          {
+            "title": "Operational Process Architecture",
+            "body": "Map the complete service workflow and its dependencies so teams can make reliable commitments and reduce avoidable interruptions.",
+            "topics": [
+              "Service preparation",
+              "Appointment management",
+              "Workshop capacity planning",
+              "Internal and external work prioritisation",
+              "Parts availability and preparation",
+              "Technical work execution",
+              "Quality assurance",
+              "Exception management",
+              "Vehicle handover",
+              "Clear operational ownership"
+            ]
+          },
+          {
+            "title": "Digital Business Systems",
+            "body": "Explore conceptual requirements for ERP and dealer management systems (DMS). A system feature should remove unnecessary work or make an essential task easier.",
+            "topics": [
+              "ERP and DMS workflows",
+              "Shared customer and service information",
+              "Role-based interfaces",
+              "Operational documentation",
+              "Resource and competence planning",
+              "Supplier integrations",
+              "Operational analytics",
+              "Exception identification and escalation",
+              "Intuitive interfaces"
+            ]
+          },
+          {
+            "title": "Operational Economics & Performance",
+            "body": "Evaluate indicators together so an improvement in one measure can be considered alongside effects on other parts of the operation.",
+            "topics": [
+              "Capacity utilisation",
+              "Productivity and workflow efficiency",
+              "Revenue and profitability",
+              "Inventory turnover and working capital",
+              "Parts availability",
+              "Quality-related costs",
+              "Administrative workload",
+              "Customer commitments",
+              "Balanced performance indicators"
+            ]
+          },
+          {
+            "title": "Customer Experience & Lifecycle Management",
+            "body": "Customer experience emerges from the whole operating model, from the first commitment to continued vehicle availability and service support.",
+            "topics": [
+              "Reliable customer commitments",
+              "Transparent and timely communication",
+              "Service continuity",
+              "Vehicle availability",
+              "Quality and reliability",
+              "Customer history and service documentation",
+              "Long-term relationships",
+              "Vehicle lifecycle management"
+            ]
+          }
+        ],
+        "method": {
+          "perspectives": [
+            "Strategic synthesis and decision-making",
+            "Concept development and exploration",
+            "Research and analysis",
+            "Critical review"
+          ],
+          "evidence": [
+            "Observations",
+            "Documented facts",
+            "Working assumptions",
+            "Hypotheses",
+            "Proposed operating principles",
+            "Open questions",
+            "Planned experiments",
+            "Validated results, when available"
+          ],
+          "review": "Challenge proposals before treating them as conclusions. Evaluate practical workload, commercial impact, safety, customer value and operational feasibility. AI supports analysis, research, documentation, concept development and critical review. AI-assisted interpretations require independent support before they can count as verified findings."
+        },
+        "studies": [
+          {
+            "slug": "competence-continuity",
+            "title": "Competence management and operational continuity",
+            "problem": "How can a service team maintain coverage of critical work as people, vehicles and skills change?",
+            "context": "Service continuity depends on matching jobs to available skills and keeping knowledge transferable.",
+            "principles": "Set role-specific criteria, involve people in assessment and protect time for learning.",
+            "solution": "Prototype a role-level competence map with onboarding, specialisation and coverage planning.",
+            "dependencies": "Agreed role criteria, accurate qualification records, training capacity and human oversight.",
+            "benefits": "Potential benefits include earlier visibility into coverage gaps and clearer learning priorities.",
+            "risks": "A map may go stale or be mistaken for a performance score. Restrict access to individual records.",
+            "validation": "Compare planning decisions with and without the map in realistic scenarios. Ask employees and planners whether it improves decisions and what upkeep it requires.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          },
+          {
+            "slug": "employee-feedback",
+            "title": "Employee feedback and continuous improvement",
+            "problem": "How can employees raise friction in everyday work and see how it is addressed?",
+            "context": "Ideas and observations often arise where work happens. Some changes need a decision beyond the local team.",
+            "principles": "Listen fairly, address issues close to the work and explain decisions to change or retain a process.",
+            "solution": "Sketch a feedback loop that assigns an owner, distinguishes local fixes from escalations and closes each item with a reasoned response.",
+            "dependencies": "Trust, time for review, clear decision boundaries and management follow-through.",
+            "benefits": "Potential benefits include earlier visibility of recurring issues and stronger confidence in the feedback process.",
+            "risks": "An intake channel may become a backlog, expose sensitive matters or discourage participation if follow-up is inconsistent.",
+            "validation": "Walk through anonymised scenarios with staff and managers. Evaluate response effort, decision clarity and whether sensitive concerns have an appropriate route.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          },
+          {
+            "slug": "parts-exceptions",
+            "title": "Parts availability and operational exception management",
+            "problem": "How can teams identify a parts exception before it disrupts an appointment?",
+            "context": "An appointment can depend on part identity, delivery timing and workshop availability.",
+            "principles": "Confirm readiness before making commitments. Assign ownership when an exception occurs.",
+            "solution": "Map a parts-readiness checkpoint and an exception workflow for checking alternatives, replanning and informing the customer.",
+            "dependencies": "Reliable supplier information, parts identification, appointment ownership and timely status updates.",
+            "benefits": "Potential benefits include fewer avoidable interruptions and earlier customer communication.",
+            "risks": "Availability data may be stale. Premature alerts can create unnecessary work and substitutions need technical review.",
+            "validation": "Use representative scenarios for delays, incorrect parts and uncertain availability. Compare decision timing and rework with the current process.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          },
+          {
+            "slug": "workshop-capacity",
+            "title": "Workshop capacity and resource planning",
+            "problem": "How can a workshop make credible commitments when jobs differ in duration, equipment and required skills?",
+            "context": "Effective capacity depends on technicians, bays, tools, competence and uncertainty in incoming work.",
+            "principles": "Plan against real constraints, allow for variation and define how priorities can change.",
+            "solution": "Explore a capacity view that matches work to critical resources and supports replanning when conditions change.",
+            "dependencies": "Usable job estimates, resource availability, competence coverage and agreed priority rules.",
+            "benefits": "Potential benefits include more reliable appointment promises and less last-minute replanning.",
+            "risks": "Detailed planning can consume more time than it saves. Optimistic estimates may hide bottlenecks.",
+            "validation": "Use representative schedules to test disruptions and resource conflicts. Assess planning effort, feasibility and effects on commitments.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          },
+          {
+            "slug": "customer-information",
+            "title": "Customer communication and shared operational information",
+            "problem": "How can different service roles give the customer a coherent update as work progresses?",
+            "context": "Preparation, workshop work, parts and handover generate information at different points in the service relationship.",
+            "principles": "Record decisions where work happens, assign update ownership and only share information relevant to each role.",
+            "solution": "Prototype a shared view of the service commitment, status, next action and communication history.",
+            "dependencies": "Accurate source information, role-based access, agreed terminology and clear customer communication responsibilities.",
+            "benefits": "Potential benefits include fewer repeated enquiries and more timely, consistent updates.",
+            "risks": "Duplicate entry or excessive notifications could increase administration. Customer data needs appropriate access controls.",
+            "validation": "Review realistic service scenarios with staff. Compare the effort to record and retrieve updates and check whether each role has appropriate access.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          },
+          {
+            "slug": "balanced-performance",
+            "title": "Operational performance and balanced KPIs",
+            "problem": "How can leaders assess service performance without improving one measure at the expense of customer commitments or quality?",
+            "context": "Capacity, productivity, inventory, margin and service reliability influence one another.",
+            "principles": "Use clearly defined indicators with context and review both outcomes and trade-offs.",
+            "solution": "Sketch a balanced review that connects availability, delivery reliability, quality, workload and commercial performance.",
+            "dependencies": "Consistent data definitions, reliable inputs and a shared understanding of decisions each indicator supports.",
+            "benefits": "Potential benefits include clearer discussion of trade-offs and earlier detection of local optimisation.",
+            "risks": "Poor definitions, delayed data or targets used without context can distort decisions.",
+            "validation": "Test whether sample indicators explain realistic cases, reveal trade-offs and justify collection effort. Establish baselines before considering targets.",
+            "status": "Concept under development",
+            "evidenceStatus": "independent-concept",
+            "publicationStatus": "approved"
+          }
+        ],
+        "caseLinks": [
+          {
+            "slug": "inchcape-aftersales",
+            "connection": "Operational transformation and process development"
+          },
+          {
+            "slug": "schmiedmann-service",
+            "connection": "Capacity development and operational scaling"
+          },
+          {
+            "slug": "bosch-training",
+            "connection": "Competence development and technical training"
+          },
+          {
+            "slug": "vv-auto-seat",
+            "connection": "Knowledge transfer and cross-organisational integration"
+          },
+          {
+            "slug": "laakkonen-workshop",
+            "connection": "Responsibility design and organisational integration"
+          },
+          {
+            "slug": "iris-nordic-operations",
+            "connection": "Business systems and operating model development"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mobility",
+      "title": "Autonomous Mobility",
+      "status": "Area of interest",
+      "body": "My interest is in the operations that support autonomous fleets, including vehicle readiness, maintenance coordination, escalation and technical training. Aftersales, diagnostics and service-network experience provide a transferable perspective on that work.",
+      "evidenceStatus": "independent-concept"
+    }
+  ],
+  "capabilities": [
+    {
+      "title": "Understand",
+      "body": "See how complex operations work in practice, identify dependencies and recognise the root causes of performance problems."
+    },
+    {
+      "title": "Build",
+      "body": "Establish operational structures, launch services and develop the capabilities the operation needs."
+    },
+    {
+      "title": "Transform",
+      "body": "Improve performance by aligning people, responsibilities, processes, technology and commercial objectives."
+    },
+    {
+      "title": "Sustain",
+      "body": "Build reliable operations and develop them through continuous improvement, competence development and long-term customer value."
+    }
+  ],
+  "operatingModel": {
+    "title": "How I approach operational development",
+    "body": "My approach has developed through operational transformation, technical services, business integration, team development and the establishment of new operations. It starts with understanding the real work before changing the system.",
+    "steps": [
+      {
+        "title": "Understand the operation",
+        "body": "Observe how work happens and how people, processes, systems, customers, resources and financial performance interact."
+      },
+      {
+        "title": "Identify the root cause",
+        "body": "Distinguish symptoms from underlying problems. Examine working conditions and available support before drawing conclusions about individual competence."
+      },
+      {
+        "title": "Clarify the structure",
+        "body": "Establish clear objectives, responsibilities, priorities and ownership."
+      },
+      {
+        "title": "Connect the missing elements",
+        "body": "Develop connections between people, information, systems, processes and organisational functions."
+      },
+      {
+        "title": "Translate strategy into action",
+        "body": "Define how work will happen, including workflows, decisions and exception management."
+      },
+      {
+        "title": "Engage people",
+        "body": "Involve employees, listen to concerns, provide support and follow through on problems raised."
+      },
+      {
+        "title": "Measure, improve and scale",
+        "body": "Establish a stable foundation, monitor performance, learn from results and improve systematically."
+      }
+    ],
+    "evidenceStatus": "professional-philosophy"
+  },
+  "insight": {
+    "title": "Building reliability throughout the customer lifecycle",
+    "body": "Technical service and aftersales are part of the customer relationship from before the initial purchase through the life of the vehicle or product.",
+    "sections": [
+      {
+        "title": "Maintain and restore operational capability",
+        "body": "Technical service helps customers operate reliably and restores capability efficiently when failures or disruptions occur. Reliability, availability, delivery performance and trust all contribute to customer value."
+      },
+      {
+        "title": "Design for reliable delivery",
+        "body": "Identify quality and delivery deviations early, assign ownership for risks and corrective actions, and plan capacity. Use intuitive systems, clear communication, constructive supplier and partner cooperation, and long-term competence development to support a commercially sustainable operating model."
+      },
+      {
+        "title": "Evaluate the effect of technology on work",
+        "body": "When assessing a system feature, I ask what work it removes, what work it introduces and whether it improves the overall operation."
+      }
+    ],
+    "evidenceStatus": "professional-philosophy"
+  },
+  "publicationStatus": "approved"
 }

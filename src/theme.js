@@ -31,9 +31,11 @@ if (themeButton) {
 
 const menu = document.querySelector('.menu');
 menu?.addEventListener('click', (event) => {
-  if (event.target.closest('a')) {
-    menu.open = false;
-    const target = document.querySelector(event.target.hash);
+  const link = event.target.closest('a');
+  if (!link) return;
+  menu.open = false;
+  if (link.getAttribute('href').startsWith('#')) {
+    const target = document.getElementById(link.hash.slice(1));
     target?.setAttribute('tabindex', '-1');
     target?.focus({ preventScroll: true });
   }
