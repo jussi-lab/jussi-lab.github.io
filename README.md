@@ -75,3 +75,20 @@ existing career case slugs. Each concept has a stable slug, nine narrative
 fields, an evidence status and separate publication approval. Concept pages,
 cross-links and sitemap entries are generated from these records. Keep private
 research, sources and unapproved material outside the public repository.
+
+## Languages
+
+English remains at the existing routes. Finnish uses the same route structure
+under `/fi/`. Both versions are generated with the same templates. Every
+page links to its language counterpart and lists both versions in its
+metadata and the sitemap.
+
+Maintain shared career records, dates, metrics, qualifications and evidence
+status in `content/portfolio.json`. Maintain Finnish copy in
+`content/fi.json` under `strings`, keyed by the English source text.
+Translations that interpolate shared numbers use matching `{}` placeholders
+in the key and value. Keep employer names, IDs, URLs, dates and evidence fields
+in the shared model. The build reports missing Finnish copy.
+
+Use the local review build to proofread both versions. Production requires
+owner approval for the Finnish copy in addition to the shared content approval.
