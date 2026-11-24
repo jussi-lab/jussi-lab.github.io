@@ -11,7 +11,7 @@ try {
 function applyTheme() {
   const theme = userTheme ?? (preferredDark.matches ? 'dark' : 'light');
   root.dataset.theme = theme;
-  if (themeButton) themeButton.textContent = theme === 'dark' ? 'Use light theme' : 'Use dark theme';
+  if (themeButton) themeButton.textContent = theme === 'dark' ? themeButton.dataset.light : themeButton.dataset.dark;
 }
 
 applyTheme();

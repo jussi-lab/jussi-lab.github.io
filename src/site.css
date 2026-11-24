@@ -59,6 +59,10 @@ p + p { margin-top: .35rem; }
 .primary { display: none; gap: 1.5rem; }
 .primary a, .menu a { text-decoration: none; color: var(--text); }
 .primary a:hover, .menu a:hover { text-decoration: underline; }
+.language-switch { display: flex; align-items: center; gap: .2rem; margin-inline-start: auto; white-space: nowrap; }
+.language-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 2rem; min-height: 2rem; padding: .2rem; }
+.language-switch a[aria-current="page"] { color: var(--text); font-weight: 700; text-decoration-thickness: 2px; }
+.language-switch span { color: var(--muted); }
 .utilities { display: flex; align-items: center; gap: .5rem; margin-inline-start: auto; }
 button, summary { font: inherit; font-size: .875rem; cursor: pointer; border: 1px solid var(--line); border-radius: .35rem; background: var(--panel); color: var(--text); padding: .5rem .65rem; }
 .menu { position: relative; }
