@@ -108,21 +108,52 @@ def bullet_list(values):
     return "<ul>" + "".join(f"<li>{escape(value)}</li>" for value in values) + "</ul>"
 
 
-def career_list():
+def case_metrics(item):
+    primary = [item["metric"]] if "metric" in item else []
+    return primary + item.get("additionalMetrics", [])
+
+
+def case_results(item, include_metrics=False):
+    result = escape(item["results"])
+    if include_metrics and item.get("additionalMetrics"):
+        metrics = "; ".join(f'{escape(metric["label"])} {escape(metric["value"])}' for metric in case_metrics(item))
+        result = f"{metrics}. {result}"
+    if item["evidenceStatus"] == "owner-supplied":
+        result = f"Owner-reported: {result}"
+    return result
+
+
+def career_list(include_achievements=True):
+    cases_by_career = {item["careerId"]: item for item in CASES}
     rows = []
     for job in DATA["career"]:
         employer, role = (escape(job[key]) for key in ("employer", "role"))
         period = job.get("period") or ("Present" if job.get("current") else "")
         context = " · ".join(value for value in (period, job.get("location")) if value)
         date_line = paragraphs([context]) if context else ""
-        summary = paragraphs([job["summary"]]) if job.get("summary") else ""
-        responsibilities = bullet_list(job["responsibilities"]) if job.get("responsibilities") else ""
+        case = cases_by_career.get(job["id"])
+        summary = ""
+        if case:
+            if include_achievements:
+                summary += f'<p><strong>Scope of responsibility:</strong> {escape(case["background"])}</p>'
+            else:
+                summary += paragraphs([job["summary"]])
+            summary += f'<p><strong>Key actions:</strong> {escape(case["contribution"])}</p>'
+            if case["status"] == "ongoing" or include_achievements:
+                label = "Ongoing development" if case["status"] == "ongoing" else "Key achievements"
+                summary += f'<p><strong>{label}:</strong> {case_results(case, include_metrics=True)}</p>'
+            if include_achievements:
+                summary += f'<p><a href="{case_path(case)}">Read the {employer} case study</a></p>'
+        elif job.get("summary"):
+            summary = f'<p><strong>Key contributions:</strong> {escape(job["summary"])}</p>'
         assignment = job.get("assignment")
+        if job.get("responsibilities"):
+            summary += bullet_list(job["responsibilities"])
         if assignment:
             assignment_label = " · ".join(assignment[key] for key in ("employer", "location", "period"))
             summary += f'<p class="assignment"><strong>{escape(assignment_label)}</strong></p>'
             summary += paragraphs([assignment["summary"]])
-        rows.append(f'<li><div class="career-meta"><h3>{employer}</h3>{date_line}</div><div><p class="role">{role}</p>{summary}{responsibilities}</div></li>')
+        rows.append(f'<li><div class="career-meta"><h3>{employer}</h3>{date_line}</div><div><p class="role">{role}</p>{summary}</div></li>')
     return '<ol class="timeline">' + "".join(rows) + "</ol>"
 
 
@@ -155,7 +186,7 @@ def validate_publication(review):
                 valid = isinstance(value, str) and value.strip()
             if not valid:
                 raise ValueError(f"Invalid {key} for {slug}")
-        if item["status"] == "ongoing" and "metric" in item:
+        if item["status"] == "ongoing" and case_metrics(item):
             raise ValueError(f"Ongoing case cannot present a completed metric: {slug}")
         date.fromisoformat(item["lastUpdated"])
     links = [item["slug"] for item in AUTOMOTIVE_PROJECT["caseLinks"]]
@@ -201,9 +232,15 @@ def case_page(item):
     sections = []
     for key, label in CASE_SECTIONS.items():
         heading = "Current development status" if key == "results" and ongoing else label
-        body = bullet_list(item[key]) if key == "actions" else paragraphs([item[key]])
+        if key == "actions":
+            body = bullet_list(item[key])
+        elif key == "results":
+            body = f"<p>{case_results(item)}</p>"
+        else:
+            body = paragraphs([item[key]])
         sections.append(f"<section><h2>{heading}</h2>{body}</section>")
-    metric = metric_card(item["metric"], heading="h2") if "metric" in item else ""
+    cards = "".join(metric_card(metric, heading="h2") for metric in case_metrics(item))
+    metric = f'<div class="metric-grid">{cards}</div>' if cards else ""
     context = " · ".join(job[key] for key in ("employer", "role", "period"))
     intro = f'<p class="lede">{escape(context)}</p>'
     related = ""
@@ -422,7 +459,7 @@ def profile_page():
 
 def home():
     cases = CASES
-    metrics = [item["metric"] for item in cases if "metric" in item]
+    metrics = [metric for item in cases for metric in case_metrics(item)]
     achievement_groups = "".join(
         f'<div class="achievement-group"><h3>{label}</h3><div class="metric-grid">{cards}</div></div>'
         for kind, label in (("result", "Measured results"), ("scope", "Scope of responsibility"))
@@ -462,8 +499,8 @@ def home():
 
 def cv():
     highlights = "".join(
-        f'<li><strong>{escape(CAREER[item["careerId"]]["employer"])}</strong> · {escape(item["results"])}</li>'
-        for item in CASES if item["status"] == "completed" and "metric" in item
+        f'<li><strong>{escape(CAREER[item["careerId"]]["employer"])}</strong> · {case_results(item, include_metrics=True)}</li>'
+        for item in CASES if item["status"] == "completed"
     )
     positioning = " · ".join(map(escape, DATA["positioning"]))
     return layout(f"CV | {DATA['name']}", "/cv/", f"Printable professional CV for {DATA['name']}.", f"""
@@ -475,7 +512,7 @@ def cv():
 <h2>Professional profile</h2>{paragraphs(DATA["summary"][:3])}
 <h2>Core competencies</h2>{competency_groups()}
 <h2>Selected achievements</h2><ul>{highlights}</ul>
-<h2>Career history</h2>{career_list()}
+<h2>Career history</h2>{career_list(include_achievements=False)}
 <h2>Education and qualifications</h2>{credential_sections()}
 </main>{footer()}""")
 
