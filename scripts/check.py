@@ -102,6 +102,9 @@ def main():
         assert en.metadata["description"] != fi.metadata["description"], path
         assert en.ids == fi.ids, path
     for route, page in pages.items():
+        html = (output / route.strip("/") / "index.html").read_text(encoding="utf-8").casefold()
+        for label in ("owner-reported", "owner-supplied", "omistajan ilmoittama"):
+            assert label not in html, (route, label)
         path, language = localized_routes[route]
         assert page.alternates == {code: SITE + route_for(path, code) for code in ("fi", "en", "x-default")}, route
         assert page.language_links == {
@@ -143,7 +146,15 @@ def main():
             route = route_for(base, language)
             html = (output / route.strip("/") / "index.html").read_text(encoding="utf-8")
             for metric in case_metrics(inchcape):
-                assert escape(metric["value"]) in html and escape(label_for(metric["label"])) in html, (route, metric)
+                label = metric.get("homeLabel", metric["label"]) if base == "/" else metric["label"]
+                assert escape(metric["value"]) in html.replace(" %", "%"), (route, metric)
+                assert escape(label_for(label)) in html, (route, metric)
+            if base == "/":
+                achievements = html.split('id="achievements"', 1)[1].split("</section>", 1)[0]
+                assert all(job["employer"] not in achievements for job in DATA["career"]), route
+                measured, scope = achievements.split(label_for("Scope of responsibility"), 1)
+                assert "<strong>27</strong>" not in measured and "<strong>27</strong>" in scope, route
+                assert label_for("Profitability maintained") in measured, route
         cv_route = route_for("/cv/", language)
         cv_html = (output / cv_route.strip("/") / "index.html").read_text(encoding="utf-8")
         assert f'>{label_for("Print CV")}</button>' in cv_html

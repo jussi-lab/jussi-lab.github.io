@@ -145,8 +145,6 @@ def case_results(item, include_metrics=False):
     if include_metrics and item.get("additionalMetrics"):
         metrics = "; ".join(f'{escape(metric["label"])} {escape(metric["value"])}' for metric in case_metrics(item))
         result = f"{metrics}. {result}"
-    if item["evidenceStatus"] == "owner-supplied":
-        result = f'{ui("Owner-reported")}: {result}'
     return result
 
 
@@ -451,9 +449,17 @@ def competency_groups():
     return f'<div class="competency-groups">{groups}</div>'
 
 
-def metric_card(metric, heading="h3"):
-    value, label, context = (escape(metric[key]) for key in ("value", "label", "context"))
-    return f'<div class="metric"><strong>{value}</strong><{heading}>{label}</{heading}><p>{context}</p></div>'
+def metric_card(metric, heading="h3", homepage=False):
+    value = metric["value"]
+    label = metric["label"]
+    context = metric["context"]
+    if homepage:
+        label = metric.get("homeLabel", label)
+        context = metric.get("homeContext", "")
+        if LANGUAGE == "fi" and value.endswith("%"):
+            value = value[:-1] + " %"
+    description = f"<p>{escape(context)}</p>" if context else ""
+    return f'<div class="metric"><strong>{escape(value)}</strong><{heading}>{escape(label)}</{heading}>{description}</div>'
 
 
 def header():
@@ -496,7 +502,7 @@ def home():
     achievement_groups = "".join(
         f'<div class="achievement-group"><h3>{ui(label)}</h3><div class="metric-grid">{cards}</div></div>'
         for kind, label in (("result", "Measured results"), ("scope", "Scope of responsibility"))
-        if (cards := "".join(metric_card(metric, heading="h4") for metric in metrics if metric.get("kind", "result") == kind))
+        if (cards := "".join(metric_card(metric, heading="h4", homepage=True) for metric in metrics if metric.get("kind", "result") == kind))
     )
     leadership = DATA["leadership"]
     model = DATA["operatingModel"]
