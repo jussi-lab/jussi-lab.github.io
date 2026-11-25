@@ -179,7 +179,7 @@
       "metric": {
         "value": "+26",
         "label": "Customer NPS points",
-        "context": "Inchcape Motors Finland · Owner-reported"
+        "context": "Inchcape Motors Finland"
       },
       "evidenceStatus": "owner-supplied",
       "publicationStatus": "approved",
@@ -194,17 +194,20 @@
         {
           "value": "+65%",
           "label": "Service labour sales",
-          "context": "Inchcape Motors Finland · Owner-reported"
+          "homeLabel": "Service labour sales growth",
+          "context": "Inchcape Motors Finland"
         },
         {
           "value": "+70%",
           "label": "Spare parts sales",
-          "context": "Inchcape Motors Finland · Owner-reported"
+          "homeLabel": "Spare parts sales growth",
+          "context": "Inchcape Motors Finland"
         },
         {
           "value": "+60%",
           "label": "Revenue per labour hour",
-          "context": "Inchcape Motors Finland · Owner-reported"
+          "homeLabel": "Revenue per labour hour growth",
+          "context": "Inchcape Motors Finland"
         }
       ]
     },
@@ -223,7 +226,8 @@
       "metric": {
         "value": "2×",
         "label": "Service capacity",
-        "context": "Schmiedmann, while maintaining profitability"
+        "context": "Schmiedmann, while maintaining profitability",
+        "homeContext": "Profitability maintained"
       },
       "evidenceStatus": "owner-supplied",
       "publicationStatus": "approved",
@@ -249,6 +253,7 @@
       "metric": {
         "value": "27",
         "label": "Employees managed",
+        "homeLabel": "Employees supervised",
         "kind": "scope",
         "context": "Workshop leadership at Autotalo Laakkonen"
       },
